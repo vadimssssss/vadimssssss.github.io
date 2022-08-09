@@ -260,17 +260,18 @@
         &__btn {
             width: 100px;
         }
-    }
-    .title {
-        &_main {
-            font-size: 26px;
-            line-height: 30px;
+        &__title {
+            width: 100%;
         }
     }
     .btn {
         padding: 0 5px;
     }
     .benefits {
+        &__title {
+            font-size: 30px;
+            line-height: 40px;
+        }
         &__column {
             &-wrapper {
                 grid-template-columns: 1fr;
@@ -314,11 +315,23 @@
                 font-size: 16px;
             }
         }
+        &__title {
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+    .claims {
+        &__title {
+            font-size: 30px;
+            line-height: 40px;
+        }
     }
     .employ {
         padding-top: 60px;
         &__title {
             width: 100%;
+            font-size: 30px;
+            line-height: 40px;
         }
         &__text {
             width: 100%;
@@ -334,10 +347,12 @@
             width: 100%;
         }
         &__title {
-            font-size: 36px;
+            font-size: 30px;
+            line-height: 40px;
         }
         &__appeal {
-            font-size: 36px;
+            font-size: 30px;
+            line-height: 40px;
         }
     }
     .footer {
@@ -378,6 +393,12 @@
                     height: 22px;
                 }
             }
+        }
+    }
+    .back {
+        &__title {
+            font-size: 30px;
+            line-height: 40px;
         }
     }
 }
