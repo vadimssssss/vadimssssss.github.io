@@ -1,0 +1,29 @@
+.back {
+    padding-top: 120px;
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 46px;
+        text-align: center;
+        color: $main_color;
+    }
+    &__wrapper {
+        padding: 0 30px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__arrows {
+        border: none;
+        background: rgba(0, 0, 0, 0);
+    }
+    &__container {
+        margin-top: 110px;
+        padding-bottom: 120px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

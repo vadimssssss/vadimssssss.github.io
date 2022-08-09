@@ -1,568 +1,352 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RunSmart</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <title>Brella</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
-
 </head>
 <body>
-    <section id="up" class="promo">
-        <div class="container">
-            <header class="header">
-                <div class="row">
-                    <a href="#" class="col-10 offset-1 col-sm-6 offset-sm-0 col-md-3 offset-md-0 offset-lg-1 header__logo">
-                        <img src="icons/logo/logo.png" alt="logo">
-                    </a>
-                    <div class="col-md-4 offset-md-1 col-lg-2 header__official">
-                        Официальный представитель<br>
-                        <span>Garmin, Polar, Suunto</span>
-                    </div>
-                    <div class="col-10 offset-1 col-sm-6 offset-sm-0 col-md-3 offset-md-1 col-lg-2 offset-lg-2 header__contacts">
-                        <a href="tel:+74999228974" class="header__phone">+7 (499) 922-89-74</a>
-                        <button class="button" data-modal="consultation">заказать звонок</button>
-                    </div>
-                </div>
-            </header>
-
-            <div class="promo__wrapper">
-                <h1 class="promo__header">Подбор пульсометра</h1>
-                <h2 class="promo__subheader">с учётом Вашего уровня подготовки</h2>
-                <div class="promo__icons">
-                    <div class="promo__icon">
-                        <img src="icons/level/timer.png" alt="timer">
-                        Время подбора:
-                        10 минут
-                    </div>
-                    <div class="promo__icon">
-                        <img src="icons/level/delivery.png" alt="delivery">
-                        Бесплатная доставка
-                    </div>
-                    <div class="promo__icon">
-                        <img src="icons/level/messages.png" alt="messages">
-                        Ответим на все вопросы
-                    </div>
-                </div>
-
-                <button class="button button_main" data-modal="consultation">заказать консультацию</button>
-                <div class="promo__link">
-                    или
-                    <a href="#catalog">ПЕРЕЙТИ В КАТАЛОГ</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="benefits">
-        <div class="container">
-            <h2 class="title">НАШИ ПРЕИМУЩЕСТВА</h2>
-            <div class="benefits__items">
-                <div class="row">
-                    <div class="col-md-4 offset-md-0 col-lg-3 offset-lg-1 benefits__item">
-                        <img src="icons/benefits/cup.png" alt="cup" class="benefits__icon">
-                        <div class="benefits__descr">
-                            <div class="benefits__title">Делимся опытом</div>
-                            <div class="benefits__text">Наши сотрудники всегда готовы поделиться своим опытом, так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
-                        </div>
-                    </div>
     
-                    <div class="col-md-4 benefits__item">
-                        <img src="icons/benefits/heart.png" alt="heart" class="benefits__icon benefits__icon_animated">
-                        <div class="benefits__descr">
-                            <div class="benefits__title">Заботимся о здоровье</div>
-                            <div class="benefits__text">Мы работаем для того, <br> чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!</div>
-                        </div>
-                    </div>
-    
-                    <div class="col-md-4 col-lg-3 benefits__item">
-                        <img src="icons/benefits/shoe.png" alt="shoe" class="benefits__icon">
-                        <div class="benefits__descr">
-                            <div class="benefits__title">Учим бегать</div>
-                            <div class="benefits__text">Помогаем с обучением правильной технике бега! Дружим с крупнейшей школой бега в России - <span>I LOVE RUNNING.</span></div>
-                        </div>
-                    </div>
-                </div>  
-            </div>
+    <header class="header">
+        <div class="header__logo">
+            <a href="#"><img src="icons/logos/logo.svg" alt="main logo"></a>
         </div>
-    </section>
 
-    <section class="consultation">
+        <nav class="header__links">
+            <div class="header__link">
+                <a href="#">Our Plan</a>
+            </div>
+            <div class="header__link">
+                <a href="#">Employers</a>
+            </div>
+            <div class="header__link">
+                <a href="#">Brokers</a>
+            </div>
+            <div class="header__link">
+                <a href="#">Members</a>
+            </div>
+            <div class="header__link">
+                <a href="#">About</a>
+            </div>
+            <div class="header__link">
+                <a href="#">Blog</a>
+            </div>
+            
+            <button class="btn header__btn">Request a demo</button>
+            
+            <select name="login" id="login" class="header__select">
+                <option value="login">Login</option>
+            </select>
+
+            <a href="#" class="header__lang">en</a>
+        </nav>
+    </header>
+
+    <section class="promo">
         <div class="container">
-            <h2 class="title title_left">Получите бесплатную консультацию <br> по подбору пульсометра </h2>
-            <div class="consultation__descr">Просто заполните форму заявки <br> и мы перезвоним вам в течении 10 минут</div>
-            <form id="consultation-form" class="feed-form" action="#">
-                <input name="name" required placeholder="Ваше имя" type="text">
-                <input name="phone" required placeholder="Ваш телефон">
-                <input name="email" required placeholder="Ваш E-mail" type="email">
-                <button class="button button_submit">заказать консультацию</button>
+            <h1 class="title promo__title">Give your team peace of mind with supplemental health insurance from Brella.</h1>
+            <h2 class="promo__subtitle">I'm wondering...</h2>
+
+            <form action="#" class="promo__form" method="get">
+                <label>
+                    <input type="text" name="search" placeholder="Search" value="how Brella's plan works">
+                    <button class="btn promo__btn">Find out</button>
+                </label>
             </form>
         </div>
     </section>
 
-    <div class="carousel">
-        <div class="container">
-            <div class="carousel__inner">
-                <div>
-                    <img src="img/slider/slide_1.png" alt="slider">
+    <section class="benefits">
+
+        <div class="sticker">
+            <div class="sticker__item">
+                <div class="sticker__icon">
+                    <img src="icons/benefits/More_coverage.png" alt="More coverage">
                 </div>
-                <div>
-                    <img src="img/slider/slide_2.png" alt="slider">
+                <div class="sticker__descr">
+                    <div class="sticker__title">More coverage</div>
+                    <div class="sticker__text">Brella covers 13,000+ injuries and illnesses from concussions to cancer.</div>
                 </div>
-                <div>
-                    <img src="img/slider/slide_3.png" alt="slider">
+            </div>
+            <div class="sticker__item">
+                <div class="sticker__icon">
+                    <img src="icons/benefits/Less_hassle.png" alt="Less hassle">
                 </div>
-              </div>
+                <div class="sticker__descr">
+                    <div class="sticker__title">Less hassle</div>
+                    <div class="sticker__text">One easy-to-manage plan with paperless install and online admin tools.</div>
+                </div>
+            </div>
+            <div class="sticker__item">
+                <div class="sticker__icon">
+                    <img src="icons/benefits/Faster_benefits.png" alt="Faster benefits">
+                </div>
+                <div class="sticker__descr">
+                    <div class="sticker__title">Faster benefits</div>
+                    <div class="sticker__text">Brella pays claims in hours–not weeks so your people can rest easy.</div>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <section class="catalog" id="catalog">
         <div class="container">
-            <h2 class="title">Каталог пульсометров</h2>
-            <ul class="catalog__tabs">
-                <li class="catalog__tab catalog__tab_active"><div>Для фитнеса</div></li>
-                <li class="catalog__tab"><div>для бега</div></li>
-                <li class="catalog__tab"><div>для триатлона</div></li>
-            </ul>
-    
-            <div class="catalog__content catalog__content_active">
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/catalog/pulsometer.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
-                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
-                        </div>
 
-                        <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                            <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
-                    </div>
-                    
-                    <hr>
-
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__price">4 500 руб.</div>
-                        </div>
-                        <button class="button button_mini">купить</button>
-                    </div>
-                </div>
-                
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/catalog/pulsometer.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Suunto M2</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
-                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
-                        </div>
-
-                        <u class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                            <a href="#" class="catalog-item__back">назад</a>
-                        </u>
-                    </div>
-                    
-                    <hr>
-
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__price">4 500 руб.</div>
-                        </div>
-                        <button class="button button_mini">купить</button>
-                    </div>
+            <div class="benefits__wrapper">
+                <div class="benefits__column">
+                    <h3 class="subtitle">Why Brella?</h3>
+                    <div class="title benefits__title">Today, any health insurance deductible can feel like a high deductible.</div>
+                    <p class="benefits__text">Brella's supplemental health plan enhances your health benefit strategy to ensure that health hardships don't become financial burdens.</p>
+                    <button class="btn_transparent benefits__btn">See our plan</button>
                 </div>
 
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/catalog/pulsometer.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT4</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
-                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                <div class="benefits__column">
+                    <div class="benefits__column-wrapper">
+                        <div class="benefits__column-descr">
+                            <div class="benefits__column-percents">60%</div>
+                            <p class="benefits__column-text">of Americans <a href="#">would have to borrow</a> to cover an unexpected $1000 expense</p>
                         </div>
-
-                        <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                            <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
-                    </div>
-                    
-                    <hr>
-
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__price">4 500 руб.</div>
+                        <div class="chart">
+                            <div class="chart__item">
+                                <div class="chart__currency">$1,644</div>
+                                <div class="chart__column chart__column_first"></div>
+                                <div class="chart__name">Deductible</div>
+                            </div>
+                            <div class="chart__item">
+                                <div class="chart__currency">$4,039</div>
+                                <div class="chart__column chart__column_second"></div>
+                                <div class="chart__name">Annual Max</div>
+                            </div>
                         </div>
-                        <button class="button button_mini">купить</button>
+                        <div class="benefits__divider"></div>
                     </div>
                 </div>
+                <div class="benefits__averages">2020 individual averages (Source: KFF)</div>
+            </div>
+        </div>
+    </section>
 
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/catalog/pulsometer.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
-                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
-                        </div>
-
-                        <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                            <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
-                    </div>
-                    
-                    <hr>
-
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__price">4 500 руб.</div>
-                        </div>
-                        <button class="button button_mini">купить</button>
-                    </div>
+    <section class="brings">
+        <div class="container">
+            <div class="subtitle">brella brings</div>
+            <div class="brings__wrapper">
+                <div class="brings__column">
+                    <ul class="brings__list">
+                        <li class="active">Customizable benefits</li>
+                        <li class="activ">Paperless install & admin</li>
+                        <li>Effortless enrollment</li>
+                        <li>Easy claims experience</li>
+                        <li>Fast benefit payouts</li>
+                        <li>Concierge support</li>
+                    </ul>
                 </div>
-                
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/catalog/pulsometer.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Suunto M2</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
-                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
-                        </div>
-
-                        <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                            <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
-                    </div>
-                    
-                    <hr>
-
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__price">4 500 руб.</div>
-                        </div>
-                        <button class="button button_mini">купить</button>
-                    </div>
-                </div>
-
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/catalog/pulsometer.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT4</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
-                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
-                        </div>
-
-                        <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                            <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
-                    </div>
-                    
-                    <hr>
-
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__price">4 500 руб.</div>
-                        </div>
-                        <button class="button button_mini">купить</button>
-                    </div>
+                <div class="brings__column">
+                    <p class="brings__text">
+                        Every Brella plan comes with a benefit for Moderate, Severe, and Catastrophic conditions. Employees can select the payout amounts that fit their needs and their budget.
+                        <br><br>
+                        Employers can fund part or all of the premiums—or offer Brella as a voluntary benefit. The choice is up to you.
+                    </p>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="catalog__content catalog__content_two">
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/catalog/pulsometer.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
-                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
-                        </div>
-
-                        <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                            <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
-                    </div>
-                    
-                    <hr>
-
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__price">4 500 руб.</div>
-                        </div>
-                        <button class="button button_mini">купить</button>
-                    </div>
+    <section class="coverage">
+        <div class="container">
+            <div class="coverage__wrapper">
+                <div class="coverage__descr">
+                    <div class="subtitle">one plan, more coverage</div>
+                    <div class="title coverage__title">No one can predict which health issues might come their way.</div>
+                    <div class="coverage__text">Our broad supplemental coverage gets rid of the guesswork and puts cash in your team’s pockets for most conditions that require urgent medical attention.</div>
                 </div>
-                
-                <div class="catalog-item catalog-item_second">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/catalog/pulsometer.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
-                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
-                        </div>
-
-                        <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                            <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
-                    </div>
-                    
-                    <hr>
-
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__price">4 500 руб.</div>
-                        </div>
-                        <button class="button button_mini">купить</button>
-                    </div>
+                <div class="coverage__img">
+                    <img src="img/health.png" alt="health">
                 </div>
-            </div>
-
-            <div class="catalog__content">
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/catalog/pulsometer.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
-                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
-                        </div>
-
-                        <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                            <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
+                <div class="coverage__percents">
+                    <div class="coverage__percents-item">
+                        <div class="coverage__percents-value">5K</div>
+                        <div class="coverage__percents-text">covered injuries and illnesses from fractures and appendicitis to cancer</div>
                     </div>
-                    
-                    <hr>
-
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__price">4 500 руб.</div>
-                        </div>
-                        <button class="button button_mini">купить</button>
+                    <div class="coverage__percents-item">
+                        <div class="coverage__percents-value">1X</div>
+                        <div class="coverage__percents-text">more covered conditions than Accident and Critical Illness plans—combined</div>
                     </div>
-                </div>
-                
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/catalog/pulsometer.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
-                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
-                        </div>
-
-                        <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                            <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
+                    <div class="coverage__percents-item">
+                        <div class="coverage__percents-value">40%</div>
+                        <div class="coverage__percents-text">plans are 100% guaranteed issue. No medical underwriting required</div>
                     </div>
-                    
-                    <hr>
-
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__price">4 500 руб.</div>
-                        </div>
-                        <button class="button button_mini">купить</button>
-                    </div>
-                </div>
-
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/catalog/pulsometer.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
-                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
-                        </div>
-
-                        <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                            <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
-                    </div>
-                    
-                    <hr>
-
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__price">4 500 руб.</div>
-                        </div>
-                        <button class="button button_mini">купить</button>
+                    <div class="coverage__percents-item">
+                        <div class="coverage__percents-value">0</div>
+                        <div class="coverage__percents-text">Zero limitations or exclusions for pre-existing conditions</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="feedback">
+    <section class="claims">
         <div class="container">
-            <h2 class="title">отзывы клиентов</h2>
-            <div class="feedback__reviews">
-                <div class="feedback__review animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
-                    <div class="feedback__profile">
-                        <img src="img/clients/irina.png" alt="irina_ivanchenko">
+            <div class="claims__wrapper">
+                <div class="claims__phone">
+                    <img src="img/phone.png" alt="mobile phone">
+                </div>
+                <div class="claims__descr">
+                    <div class="subtitle claims__subtitle">a better claims experience</div>
+                    <div class="title claims__title">Give your people a plan that pays in hours—not weeks.</div>
+                    <div class="claims__text">Your team can’t wait for peace of mind. Brella pays on diagnosis, so members can file a claim sooner and get paid faster via our Member Portal or mobile app.</div>
+                    <button class="btn_transparent claims__btn">Play Video</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="employ">
+        <div class="container">
+            <div class="subtitle employ__subtitle">for employers</div>
+            <div class="title employ__title">Easy enrollment meets simple administration.</div>
+            <div class="employ__text">Brella brings 100% paperless implementation, enrollment, and admin. Plug into our platforms or we’ll plug into yours.</div>
+            <button class="btn_transparent employ__btn">Learn more</button>
+        </div>
+    </section>
+
+    <section class="back">
+        <div class="container">
+            <div class="back__title">Proudly backed by</div>
+            <div class="back__container">
+                <button class="back__arrows">
+                    <img src="icons/arrows/arrow_left.svg" alt="arrow left">
+                </button>
+                <div class="back__wrapper">
+                    <div class="back__item">
+                        <img src="icons/backed_logo/brewer_lane.png" alt="brewer lane">
                     </div>
-                    <div class="feedback__content">
-                        <div class="feedback__username">Ирина Иванченко</div>
-                        <div class="feedback__subheader">2 полумарафона</div>
-                        <div class="feedback__comment">Не знала, что себе купить - обратилась к ребятам из RunSmart - подобрали пульсометр, который подошёл именно под мои цели и финансовые возможности. Через некоторое время решила обновить гаджет - не раздумывая обратилась туда же. <br> Новые цели - новый гаджет! <br> Спасибо, RunSmart!</div>
+                    <div class="back__item">
+                        <img src="icons/backed_logo/two_sigma.png" alt="two sigma">
+                    </div>
+                    <div class="back__item">
+                        <img src="icons/backed_logo/digitalis.png" alt="digitalis">
+                    </div>
+                    <div class="back__item">
+                        <img src="icons/backed_logo/founder.png" alt="founder">
+                    </div>
+                    <div class="back__item">
+                        <img src="icons/backed_logo/symphony_al.png" alt="symphony al">
                     </div>
                 </div>
-                <hr>
-                <div class="feedback__review animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
-                    <div class="feedback__profile">
-                        <img src="img/clients/ivan.png" alt="ivan_semochkin">
-                    </div>
-                    <div class="feedback__content">
-                        <div class="feedback__username">Иван Сёмочкин</div>
-                        <div class="feedback__subheader">1 полумарафон</div>
-                        <div class="feedback__comment">Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже себе делал. <br> Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели первую тренировку, научили пользоваться новым гаджетом. Также объяснили основы анатомии, составили план тренировок на месяц вперёд. <br> С ними подготовился к своему первому полумарафону! Спасибо!!!</div>
-                    </div>
+                <button class="back__arrows">
+                    <img src="icons/arrows/arrow_right.svg" alt="arrow right">
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="divider"></div>
+    </div>
+
+    <section class="blog">
+        <div class="container">
+            <div class="blog__wrapper">
+                <div class="blog__item">
+                    <img src="img/backed/Podcast.jpg" alt="Podcast" class="blog__img">
+                    <div class="blog__subtitle">Podcast</div>
+                    <div class="blog__title">Better Voluntary Benefits with NFP Voluntary Benefits Practice Leader, Kim Heald</div>
                 </div>
-                <hr>
-                <div class="feedback__review animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
-                    <div class="feedback__profile">
-                        <img src="img/clients/julia.png" alt="julia_dashkina">
-                    </div>
-                    <div class="feedback__content">
-                        <div class="feedback__username">Юлия Дашкина</div>
-                        <div class="feedback__subheader">2 полумарафона</div>
-                        <div class="feedback__comment">Долго не могла начать бегать, т.к. до этого несколько раз начинала, но становилось тяжело и я бросала. От друзей услышала о RunSmart и о беге с контролем пульса и решила попробовать. <br> Позвонила, ребята поинтересовались моими целями и подобрали очень интересный вариант со скидкой! Теперь бегаю и наслаждаюсь бегом! Пробежала уже 2 полумарафона и несколько более коротких забегов и не намерена останавливаться! <br> Спасибо!!!</div>
-                    </div>
+                <div class="blog__item">
+                    <img src="img/backed/Insurance_Innovation.jpg" alt="Insurance Innovation" class="blog__img">
+                    <div class="blog__subtitle">Insurance Innovation</div>
+                    <div class="blog__title">How to Design Simpler Insurance Benefits</div>
                 </div>
-                <hr>
+                <div class="blog__item">
+                    <img src="img/backed/Benefits_Strategy.jpg" alt="Benefits Strategy" class="blog__img">
+                    <div class="blog__subtitle">Benefits Strategy</div>
+                    <div class="blog__title">Executive Benefits Outlook with Dan Aceti</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="talk">
+        <div class="talk__wrapper">
+            <div class="talk__photo">
+                <img src="img/talk.jpg" alt="talk">
+            </div>
+            <div class="talk__descr">
+                <div class="title talk__title">Ready to explore Brella’s supplemental health solution?</div>
+                <div class="talk__appeal">Let’s talk.</div>
+                <button class="btn talk__btn">Get in touch</button>
             </div>
         </div>
     </section>
 
     <footer class="footer">
-        <div class="footer__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.430481195992!2d37.644807315931104!3d55.76839498055754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2sMyasnitskiy%20Proyezd%2C%204%2F3%2C%20Moskva%2C%20107078!5e0!3m2!1sen!2sru!4v1658240728684!5m2!1sen!2sru" width="100%" height="630" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="footer__info">
-            <address class="footer__address">Москва, Мясницкий проезд, д.3с1</address>
-            <a class="footer__phone" href="tel:+74999228974">8 (499) 922-89-74</a>
-            <div class="footer__social">
-                <a href="#" class="footer__social-item">
-                    <img src="icons/social/1.svg" alt="facebook">
-                </a>
-                <a href="#" class="footer__social-item">
-                    <img src="icons/social/2.svg" alt="instagram">
-                </a>
-                <a href="#" class="footer__social-item">
-                    <img src="icons/social/3.svg" alt="pinterest">
-                </a>
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__links">
+                    <div class="footer__logo">
+                        <a href="#">
+                            <img src="icons/logos/logo_big.svg" alt="Brella">
+                        </a>
+                    </div>
+                    <ul class="footer__list">
+                        <div class="footer__list-title">Join Brella</div>
+                        <li>Our Plan</li>
+                        <li>Employers</li>
+                        <li>Brokers</li>
+                        <li>Members</li>
+                    </ul>
+                    <ul class="footer__list">
+                        <div class="footer__list-title">Company</div>
+                        <li>About</li>
+                        <li>Blog</li>
+                        <li>Careers</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="footer__sign">
+                    <div class="footer__sign-title">Get the latest</div>
+                    <div class="footer__sign-text">Sign up to receive benefits news and insights in your inbox once a month.</div>
+                    <form action="#">
+                        <input type="email" placeholder="Email">
+                        <button class="footer__btn">
+                            <img src="icons/arrows/arrow_btn.svg" alt="arrow">
+                        </button>
+                    </form>
+                    <div class="footer__social">
+                        <div class="footer__social-img">
+                            <a href="#">
+                                <img src="icons/social/linked_in.svg" alt="linkedIn">
+                            </a>
+                        </div>
+                        <div class="footer__social-img">
+                            <a href="#">
+                                <img src="icons/social/twitter.svg" alt="twitter">
+                            </a>
+                        </div>
+                        <div class="footer__social-img">
+                            <a href="#">
+                                <img src="icons/social/youtube.svg" alt="youtube">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divider footer__divider"></div>
+            <div class="footer__policy">
+                Brella is a limited benefit policy; it is not a substitute for health insurance. The information provided on this website is illustrative only. A complete description of benefits, limitations, and exclusions are provided in your certificate of Insurance and applicable Riders. For a summary of limitations and exclusions, see our FAQ. Payout values listed do not guarantee an amount to be paid for listed conditions. Product not available in all states. All coverage is subject to the terms and conditions of the master group policy.
+                <br><br>
+                Brella is underwritten by Greenhouse Life Insurance Company (NAIC 80055). Form No. PFSB11-TX
+                <br><br>
+                Reach us by mail at 2093 Philadelphia Pike #2496, Claymont, DE 19703 and by phone at <a href="tel:8449871070">(844) 987-1070</a>
+            </div>
+            <div class="footer__info">
+                <div class="footer__rights">© 2021 Brella Insurance Inc. All Rights Reserved.</div>
+                <div class="footer__privacy"><span>Privacy</span>Terms of Service</div>
             </div>
         </div>
     </footer>
 
-    <div class="overlay">
-        <div class="modal" id="consultation">
-            <div class="modal__close">&times;</div>
-            <div class="modal__subtitle">Просто заполните форму заявки</div>
-            <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
-            <form class="feed-form feed-form_modal" action="#">
-                <input name="name" placeholder="Ваше имя" type="text">
-                <input name="phone" placeholder="Ваш телефон">
-                <input name="email" placeholder="Ваш E-mail" type="email">
-                <button class="button button_submit">заказать консультацию</button>
-            </form>
-        </div>
-
-        <div class="modal" id="order">
-            <div class="modal__close">&times;</div>
-            <div class="modal__subtitle">Ваш заказ:</div>
-            <div class="modal__descr">Пульсометр Polar FT1</div>
-            <form class="feed-form feed-form_modal" action="#">
-                <input name="name" required placeholder="Ваше имя" type="text">
-                <input name="phone" required placeholder="Ваш телефон">
-                <input name="email" required placeholder="Ваш E-mail" type="email">
-                <button class="button button_submit">купить</button>
-            </form>
-        </div>
-
-        <div class="modal modal_mini" id="thanks">
-            <div class="modal__close">&times;</div>
-            <div class="modal__subtitle">Спасибо за вашу заявку!</div>
-            <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
-        </div>
-    </div>
-
-    <a href="#up" class="pageup">
-        <img src="icons/circle-up.svg" alt="page-up">
-    </a>
-
-    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/jquery.maskedinput.min.js"></script>
-    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

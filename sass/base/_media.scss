@@ -1,0 +1,383 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .header {
+        padding: 0 30px;
+        height: 60px;
+        &__links {
+            width: 800px;
+
+        }
+        &__logo {
+            margin: 0;
+            align-self: center;
+            &:hover {
+                transform: none;
+                img {
+                    filter: none;
+                }
+            }
+        }
+    }
+    .promo {
+        margin-top: 60px;
+        height: calc(100vh - 60px);
+    }
+    .sticker {
+        width: 960px;
+        padding: 20px;
+        column-gap: 10px;
+        top: -30px;
+    }
+    .benefits {
+        &__wrapper {
+            padding: 0px;
+            column-gap: 30px;
+        }
+    }
+    .chart {
+        justify-content: end;
+        column-gap: 50px;
+    }
+    .brings {
+        height: calc(100vh - 60px);
+    }
+    .coverage {
+        &__wrapper {
+            justify-content: space-between;
+            column-gap: 0;
+        }
+        &__percents {
+            column-gap: 0;
+        }
+    }
+    .talk {
+        &__descr {
+            padding: 0 20px;
+        }
+        &__btn {
+            width: 60%;
+            height: 60px;
+        }
+    }
+    .footer {
+        &__sign {
+            padding-left: 150px;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 90%;
+    }
+    .header {
+        display: none;
+    }
+    .promo {
+        margin-top: 0;
+        height: 100vh;
+        &__title {
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+    .sticker {
+        display: none;
+    }
+    .benefits {
+        padding: 60px 0;
+        &__wrapper {
+            grid-template-columns: 1fr;
+            row-gap: 30px;
+        }
+        &__averages {
+            grid-column: unset;
+        }  
+    }
+    .brings {
+        height: 100vh;
+        &__list {
+            li {
+                font-size: 22px;
+                margin-bottom: 5px;
+            }
+        }
+        &__text {
+            font-size: 16px;
+        }
+        &__column {
+            &:last-child {
+                padding-left: 50px;
+            }
+        }
+    }
+    .coverage {
+        padding-top: 60px;
+    }
+    .claims {
+        &__wrapper {
+            column-gap: 20px;
+        }
+    }
+    .employ {
+        &__title {
+            width: 60%;
+        }
+        &__text {
+            width: 50%;
+        }
+    }
+    .back {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 146px);
+            justify-content: space-around;
+            column-gap: 20px;
+            row-gap: 30px;
+        }
+    }
+    .talk {
+        &__descr {
+            padding-top: 20px;
+        }
+        &__title {
+            font-size: 30px;
+            line-height: 38px;
+        }
+        &__appeal {
+            font-size: 30px;
+            line-height: 38px;
+        }
+    }
+    .footer {
+        &__sign {
+            padding-left: 50px;
+        }
+        &__links {
+            column-gap: 20px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .brings {
+        &__list {
+            li {
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 26px;
+        }
+        &__column {
+            &:last-child {
+                padding-left: 25px;
+            }
+        }
+    }
+    .coverage {
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+        &__percents {
+            grid-column: unset;
+        }
+    }
+    .claims {
+        padding: 60px 0;
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+    }
+    .employ {
+        &__title {
+            width: 70%;
+        }
+        &__text {
+            width: 60%;
+        }
+    }
+    .back {
+        padding-top: 60px;
+        &__container {
+            margin-top: 60px;
+            padding-bottom: 60px;
+        }
+        &__title {
+            font-size: 32px;
+        }
+    }
+    .blog {
+        padding: 60px 0;
+        &__subtitle {
+            margin-top: 10px;
+        }
+        &__title {
+            margin-top: 10px;
+        }
+    }
+    .talk {
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+    }
+    .footer {
+        padding: 60px 0;
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+        &__sign {
+            padding-left: 0;
+            padding-top: 30px;
+        }
+        &__links {
+            padding: 0 20px;
+            column-gap: 20px;
+        }
+        &__policy {
+            font-size: 12px;
+            line-height: 20px;
+        }
+        &__info {
+            font-size: 12px;
+            line-height: 20px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .promo {
+        background-image: linear-gradient(#fff, rgba(0, 0, 0, 0)), url(../img/bg/main_bg.jpg);
+        background-blend-mode: lighten;
+        &__form {
+            width: 100%;
+        }
+        &__btn {
+            width: 100px;
+        }
+    }
+    .title {
+        &_main {
+            font-size: 26px;
+            line-height: 30px;
+        }
+    }
+    .btn {
+        padding: 0 5px;
+    }
+    .benefits {
+        &__column {
+            &-wrapper {
+                grid-template-columns: 1fr;
+            }
+            &-descr {
+                padding: 0;
+                padding-top: 50px;
+            }
+        }
+        &__divider {
+            top: 490px;
+        }
+    }
+    .chart {
+        justify-content: space-around;
+        column-gap: 0;
+    }
+    .brings {
+        background: #E3EEED;
+        &__wrapper {
+            grid-template-columns: 100% 0;
+        }
+        &__column {
+            &:last-child {
+                display: none;
+            }
+        }
+        &__list {
+            li {
+                font-size: 22px;
+                line-height: 40px;
+            }
+        }
+    }
+    .coverage {
+        padding-top: 60px;
+        &__percents {
+            grid-template-columns: 1fr;
+            justify-content: center;
+            &-text {
+                font-size: 16px;
+            }
+        }
+    }
+    .employ {
+        padding-top: 60px;
+        &__title {
+            width: 100%;
+        }
+        &__text {
+            width: 100%;
+        }
+    }
+    .blog {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 310px);
+        }
+    }
+    .talk {
+        &__btn {
+            width: 100%;
+        }
+        &__title {
+            font-size: 36px;
+        }
+        &__appeal {
+            font-size: 36px;
+        }
+    }
+    .footer {
+        &__wrapper {
+            padding-bottom: 30px;
+        }
+        &__links {
+            padding: 0 10px;
+            column-gap: 10px;
+            justify-items: end;
+        }
+        &__list {
+            &-title {
+                font-size: 12px;
+            }
+            li {
+                font-size: 14px;
+            }
+        }
+        &__logo {
+            img {
+                width: 80%;
+            }
+        }
+        &__policy {
+            font-size: 10px;
+            margin-top: 30px;
+        }
+        &__info {
+            font-size: 8px;
+            margin-top: 50px;
+        }
+        &__privacy {
+            span {
+                margin-right: 8px;
+                &::after {
+                    right: -5px;
+                    height: 22px;
+                }
+            }
+        }
+    }
+}

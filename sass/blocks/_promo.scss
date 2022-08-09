@@ -1,0 +1,39 @@
+.promo {
+    margin-top: 90px;
+    overflow: hidden;
+    height: calc(100vh - 90px);
+    background: url(../img/bg/main_bg.jpg) no-repeat 50%/cover;
+    &__title {
+        margin-top: 20vh;
+        width: 45%;
+    }
+    &__subtitle {
+        margin-top: 40px;
+        font-weight: 700;
+        font-size: 16px;
+    }
+    &__form {
+        margin-top: 16px;
+        height: 60px;
+        width: 403px;
+        label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        input {
+            border: none;
+            height: 60px;
+            border-radius: 6px 0 0 6px;
+            width: 280px;
+            padding: 0 20px;
+            font-weight: 700;
+            font-size: 14px;
+        }
+    }
+    &__btn {
+        width: 123px;
+        height: 60px;
+        border-radius: 0 6px 6px 0;
+    }
+}
