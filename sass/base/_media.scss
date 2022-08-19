@@ -1,0 +1,116 @@
+@media (max-width: 1240px) {
+    .container {
+        width: 100%;
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .promo {
+        padding: 0;
+        height: calc(100vh - 60px);
+        &__title {
+            font-size: 100px;
+            line-height: 1em;
+        }
+        img {
+            width: 80%;
+            height: 80%;
+        }
+        &__spin {
+            width: 30%;
+        }
+        &__descr {
+            bottom: 10px;
+            font-size: 14px;
+            line-height: 1em;
+            
+        }
+        &__text {
+            padding-left: 10px;
+            span {
+                font-size: 14px;
+            }
+        }
+        &__invite {
+            line-height: 1em;
+            span {
+                line-height: 1em;
+                font-size: 9px;
+            }
+        }
+    }
+    .story {
+        &__item {
+            
+            &_kl {
+                grid-column: unset;
+            }
+            &_ps {
+                grid-column: unset;
+            }
+        }
+    
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        width: 100%;
+    }
+    .promo {
+        &__designation {
+            width: 100%;
+        }
+    }
+    .help {
+        &__wrapper {
+            padding: 0 10px;
+        }
+        &__row {
+            padding: 20px 5px;
+        }
+        &__name {
+            font-size: 35px;
+        }
+        &__descr {
+            ul {
+                li {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .promo {
+        height: calc(100vh - 45px);
+        &__title {
+            font-size: 70px;
+        }
+    }
+    .header {
+        padding: 15px 15px 0 15px;
+    }
+    .help {
+        padding: 40px 0;
+        &__descr {
+            display: none;
+        }
+        &__row {
+            border: 1px solid #000;
+            border-left: none;
+            border-right: none;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .help {
+        &__name {
+            font-size: 26px;
+        }
+        &__row {
+            padding: 5px;
+        }
+    }
+}

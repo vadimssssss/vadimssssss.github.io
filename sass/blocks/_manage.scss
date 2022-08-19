@@ -1,0 +1,71 @@
+.manage {
+    background-color: #000;
+    color: #fff;
+    padding: 80px 0;
+    overflow: hidden;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 333px auto;
+    }
+    &__list {
+        width: 333px;
+        li {
+            list-style-type: none;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 28px;
+        }
+    }
+    &__text {
+        width: 534px;
+    }
+    &__title {
+        font-size: 58px;
+        line-height: 70px;
+    }
+    &__descr {
+        padding-right: 118px;
+        margin-top: 50px;
+        font-size: 20px;
+        line-height: 26px;
+    }
+    &__btn {
+        margin-top: 22px;
+        padding: 10px 5px;
+        font-size: 16px;
+        line-height: 21px;
+        background-color: rgba(0, 0, 0, 0);
+        color: #FFF;
+        border: none;
+        border-bottom: 1px solid #fff;
+        cursor: pointer;
+    }
+    &__animated {
+        margin-top: 100px;
+        white-space: nowrap;
+        &-list {
+            padding: 0 30px;
+            display: flex;
+            justify-content: start;
+            animation: manage_run 15s infinite linear;
+            li {
+                list-style-type: none;
+                margin-right: 54px;
+            }
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 114px;
+            line-height: 148px;
+            color: #181818;
+        }
+    }
+}
+a.active {
+    color: $main_color;
+}

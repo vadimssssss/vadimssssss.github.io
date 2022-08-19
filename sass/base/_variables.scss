@@ -1,0 +1,41 @@
+@keyframes arrow {
+    0% { transform: translateX(0);}
+    
+    55% { transform: translateX(-20px); }
+    
+    70% {transform: translateX(0);}
+
+    85% { transform: translateX(-5px); }
+
+    100% { transform: translateX(0); }
+}
+
+@keyframes triangle_red {
+    from {transform: translateY(-50%) translateX(-50%) rotate(-30deg);}
+
+    to {transform: translateY(-50%) translateX(-50%) rotate(-30deg) rotate(360deg);}
+}
+
+@keyframes triangle_blue {
+    from {transform: translateY(-50%) translateX(-50%) rotate(15deg) translateY(15px);}
+
+    to {transform: translateY(-50%) translateX(-50%) rotate(15deg) translateY(15px) rotate(-360deg);}
+}
+
+@keyframes manage_run {
+    0% {transform: translateX(0);}
+
+    50% {transform: translateX(-75%);}
+
+    100% {transform: translateX(0);}
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
