@@ -1,0 +1,32 @@
+.header {
+    background-color: #000000;
+    padding: 30px 72px 0 55px;
+    height: 30px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo {
+        transition: all 0.6s;
+        &:hover {
+            transform: translateY(10px) scale(1.2);
+        }
+    }
+    &__links {
+        width: 333px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__link {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 12px;
+        color: #fff;
+        text-decoration: none;
+        transition: all 0.6s;
+        &:hover {
+            text-shadow: 0 0 30px #fff;
+            transform: translateY(5px) scale(1.2);
+        }
+    }
+}
