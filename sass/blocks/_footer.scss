@@ -1,0 +1,45 @@
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 100px 0 60px 0;
+    &__email, &__phone {
+        font-size: 65px;
+        line-height: 98px;
+    }
+    &__email {
+        margin-top: 64px;
+    }
+    &__address {
+        font-size: 20px;
+        line-height: 33px;
+        &-wrapper {
+            margin-top: 144px;
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+        }
+    }
+    &__social {
+        display: flex;
+        justify-content: end;
+        &-link {
+            margin-left: 43px;
+        }
+    }
+    &__info {
+        margin-top: 230px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        font-size: 12px;
+        line-height: 17px;
+        color: rgba(255, 255, 255, 0.4);
+    }
+    &__design {
+        grid-column: 5 / 6;
+        justify-self: end;
+    }
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+}

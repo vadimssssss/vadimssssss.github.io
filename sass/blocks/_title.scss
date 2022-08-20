@@ -1,0 +1,8 @@
+.title {
+    font-size: 10px;
+    line-height: 34px;
+    text-transform: uppercase;
+    &_red {
+        color: $main_color;
+    }
+}

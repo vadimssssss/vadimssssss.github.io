@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+
+@import 'base/mixins';
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    width: 1240px;
+}
+
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/help';
+@import 'blocks/title';
+@import 'blocks/story';
+@import 'blocks/trust';
+@import 'blocks/manage';
+@import 'blocks/inspiration';
+@import 'blocks/running';
+@import 'blocks/business';
+@import 'blocks/footer';
+@import 'blocks/menu';
+
+
+
+
+
+
+@import 'base/variables';
+@import 'base/media'
+
+
+
+
+
+
+
+
+
+
+
+
+
+

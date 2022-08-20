@@ -1,0 +1,27 @@
+.trust {
+    padding-bottom: 80px;
+    &__wrapper {
+        width: 100%;
+        padding-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-content: space-between;
+        row-gap: 50px;
+    }
+    .title_red {
+        margin-left: 20px;
+    }
+    img {
+        width: 90%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__item {
+        filter: opacity(0.2);
+        transition: all 0.2s;
+        cursor: pointer;
+        &:hover {
+            filter: none;
+        }
+    }
+}
