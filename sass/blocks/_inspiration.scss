@@ -5,7 +5,7 @@
         width: 100%;
         display: grid;
         justify-content: space-between;
-        grid-template-columns: repeat(4, 294px);
+        grid-template-columns: repeat(auto-fit, 294px);
         grid-template-rows: repeat(3, auto);
         row-gap: 30px;
         align-items: center;

@@ -9,24 +9,33 @@
         &_red, &_blue {
             position: absolute;
             z-index: 2;
+            left: 50%;
+            top: 50%;
+            transform: translateY(-50%) translateX(-50%);
+            img {
+                width: 100%;
+                height: 100%;
+            }
         }
         &_red {
-            left: 50%;
-            top: 50%;
-            transform: translateY(-50%) translateX(-50%);
-            animation: triangle_red 12s infinite linear;
+            img {
+                animation: triangle_red 15s infinite linear;
+
+            }
         }
         &_blue {
-            left: 50%;
-            top: 50%;
-            transform: translateY(-50%) translateX(-50%);
-            animation: triangle_blue 10s infinite linear;
+            img {
+                animation: triangle_blue 10s infinite linear;
+            }
         }
     }
     &__designation {
         width: 939px;
         margin: 0 auto;
-        padding-top: 10vh;
+        height: 65vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     &__spin {
         position: relative;
@@ -43,8 +52,8 @@
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: repeat(2, 1fr);
-        &_row {
-            &-second {
+        &-row {
+            &_second {
                 padding-right: 40px;
                 justify-self: end;
             }

@@ -30,6 +30,7 @@
         margin-top: 230px;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
+        column-gap: 20px;
         font-size: 12px;
         line-height: 17px;
         color: rgba(255, 255, 255, 0.4);

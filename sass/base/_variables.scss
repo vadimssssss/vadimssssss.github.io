@@ -11,15 +11,15 @@
 }
 
 @keyframes triangle_red {
-    from {transform: translateY(-50%) translateX(-50%) rotate(-30deg);}
+    from {transform: rotate(0)}
 
-    to {transform: translateY(-50%) translateX(-50%) rotate(-30deg) rotate(360deg);}
+    to {transform: rotate(360deg);}
 }
 
 @keyframes triangle_blue {
-    from {transform: translateY(-50%) translateX(-50%) rotate(15deg);}
+    from {transform: rotate(0)}
 
-    to {transform: translateY(-50%) translateX(-50%) rotate(15deg) rotate(-360deg);}
+    to {transform: rotate(-360deg);}
 }
 
 @keyframes manage_run {
@@ -28,6 +28,7 @@
     50% {transform: translateX(-75%);}
 
     100% {transform: translateX(0);}
+
 }
 
 @keyframes marquee {
