@@ -14,12 +14,6 @@
             font-size: 100px;
             line-height: 1em;
         }
-        &__layer {
-            &_red, &_blue {
-                width: 70%;
-                height: 70%;
-            }
-        }
         &__spin {
             width: 30%;
         }
@@ -115,8 +109,7 @@
         }
         &__layer {
             &_red, &_blue {
-                width: 60%;
-                height: 60%;
+                width: 40%;
             }
         }
     }
@@ -361,7 +354,6 @@
         &__layer {
             &_red, &_blue {
                 width: 50%;
-                height: 50%;
             }
         }
         &__title {
@@ -404,7 +396,7 @@
             }
         }
         &__designation {
-            height: 80vh;
+            height: calc(90vh - 45px);
         }
         .container {
             overflow-x: hidden;
