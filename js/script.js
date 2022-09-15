@@ -19,3 +19,10 @@ hamburger.addEventListener('click', () => {
     menu.classList.toggle('menu__active');
     header.classList.toggle('header__fixed');
 });
+
+if (hamburger.classList.contains('hamburger__active')) {
+    document.body.style.overflowY = 'hidden';
+} else {
+    document.body.style.position = '';
+    document.body.style.top = '';
+}

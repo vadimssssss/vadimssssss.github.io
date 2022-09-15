@@ -204,6 +204,7 @@
 
 @media (max-width: 992px) {
     .header {
+        width: 100vw;
         overflow-x: hidden;
         position: relative;
         background-color: $bg_color;
