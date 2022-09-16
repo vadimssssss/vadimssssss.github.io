@@ -63,7 +63,6 @@
                 line-height: 26px;
             }
             .btn {
-                height: 40px;
                 font-size: 16px;
             }
         }
@@ -126,7 +125,7 @@
         }
         .btn {
             font-size: 12px;
-            padding: 0 20px;
+            padding: 10px 30px;
         }
     }
     .title {
@@ -143,7 +142,6 @@
             max-width: 500px;
         }
         .btn {
-            height: 45px;
             font-size: 16px;
         }
     }
@@ -151,6 +149,11 @@
         &__descr {
             font-size: 20px;
             width: 550px;
+        }
+    }
+    .team {
+        &__wrapper {
+            grid-template-columns: repeat(2, minmax(310px, 40%));
         }
     }
     .contacts {
@@ -211,10 +214,11 @@
     .header {
         width: 100vw;
         overflow-x: hidden;
-        position: relative;
+        position: fixed;
         background-color: $bg_color;
         height: 50px;
         padding: 15px 20px;
+        box-shadow: none;
         .hamburger {
             display: block;
             position: absolute;
@@ -302,7 +306,6 @@
             margin: 0 auto;
             padding: 15px 85px;
             font-size: 16px;
-            height: auto;
         }
         &__social {
             margin: 0 auto;
@@ -321,7 +324,7 @@
         line-height: 40px;
     }
     .promo {
-        height: calc(100vh - 50px);
+        height: 100vh;
         &__text {
             max-width: 420px;
         }
@@ -331,7 +334,7 @@
         }
         .btn {
             font-size: 14px;
-            padding: 0 60px;
+            padding: 15px 60px;
         }
     }
     .rewiew {
@@ -381,6 +384,12 @@
 }
 
 @media (max-width: 768px) {
+    .btn {
+        &:hover {
+            border: 2px solid $main_color;
+            background-color: $main_color;
+        }
+    }
     .services {
         &__item {
             &-title, &-price {
@@ -401,6 +410,11 @@
         &__descr {
             margin-top: 10px;
             font-size: 16px;
+        }
+    }
+    .team {
+        &__wrapper {
+            grid-template-columns: minmax(310px, 70%);
         }
     }
     .contacts {
@@ -426,7 +440,6 @@
             &-inner {
                 &-item {
                     margin: 0 auto;
-                    // width: 90vw;
                     max-width: 500px;
                     background: rgba(16, 16, 16, 0.7);
                     border: 1px solid #FFFFFF;
@@ -453,6 +466,7 @@
                     margin-top: 10px;
                 }
                 .btn {
+                    padding: 10px;
                     margin-top: 20px;
                     width: 100%;
                     font-weight: 600;
