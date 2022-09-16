@@ -133,6 +133,11 @@
         font-size: 35px;
         line-height: 45px;
     }
+    .services {
+        &__wrapper {
+            grid-template-columns: repeat(2, minmax(310px, 40%));
+        }
+    }
     .promo {
         &__text {
             max-width: 500px;
@@ -387,6 +392,9 @@
             .btn {
                 margin-top: 10px;
             }
+        }
+        &__wrapper {
+            grid-template-columns: minmax(310px, 70%);
         }
     }
     .about {
