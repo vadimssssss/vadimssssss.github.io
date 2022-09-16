@@ -1,0 +1,64 @@
+.services {
+    background-color: $bg_color;
+    padding: 100px 0;
+    &__wrapper {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(310px, 30%));
+        justify-content: space-around;
+        row-gap: 50px;
+        column-gap: 20px;
+    }
+    &__item {
+        box-sizing: content-box;
+        overflow: hidden;
+        border: 1px solid #FFFFFF;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: border .1s, transform .3s;
+        &-descr, &-elem {
+            margin-top: 25px;
+            padding: 0 40px;
+        }
+        &-elem {
+            padding-bottom: 45px; 
+        }
+        &-title {
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 36px;
+        }
+        &-text {
+            margin-top: 11px;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 26px;
+        }
+        &-price {
+            font-weight: 700;
+            font-size: 38px;
+            line-height: 46px;
+            transition: all 1s;
+        }
+        .btn {
+            margin-top: 28px;
+            height: 60px;
+            width: 100%;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 26px;
+        }
+        img {
+            position: relative;
+            left: -2px;
+            width: calc(100% + 3px);
+            object-fit: cover;
+        }
+        &:hover {
+            border: 2px solid $main_color;
+            transform: scale(1.02);
+        }
+    }
+}
